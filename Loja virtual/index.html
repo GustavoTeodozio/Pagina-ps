@@ -1,608 +1,645 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--  Alt + shift + f -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja </title> 
+    <title>Loja </title>
     <!--fonte google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--CSS-->
     <link rel="stylesheet" href="estilo.css">
     <!--fontawesome cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta:wght@500;700&display=swap');
 </style>
+
 <body>
     <!--começo da navbar-->
-    <nav class = "navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top bg-light">
-        <div class = "container">
-            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
-                <div> <i class="fa-brands fa-playstation fa-2x text-primary">  PStore |</i></div>
-                 <span class = "text-uppercase fw-bold text-primary font-monospace"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <div> <i class="fa-brands fa-playstation fa-2x text-primary"> PStore |</i></div>
+                <span class="text-uppercase fw-bold text-primary font-monospace"></span>
             </a>
 
-            <div class = "order-lg-2 nav-btns">
-                <button type = "button" class = "btn position-relative">
-                    <i class = ""></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">Iniciar sessão <i class = "fa-solid fa-user"></i></span>
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class=""></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">Iniciar sessão <i
+                            class="fa-solid fa-user"></i></span>
                 </button>
-                <button type = "button" class = "btn position-relative">
-                    <i class = ""></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                <button type="button" class="btn position-relative">
+                    <i class=""></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
                 </button>
-                <button type = "button" class = "btn position-relative">
-                    <i class = ""></i>
+                <button type="button" class="btn position-relative">
+                    <i class=""></i>
                 </button>
             </div>
 
-            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
-                <span class = "navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
-                <ul class = "navbar-nav mx-auto text-center">
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark fw-bold" href = "#header">Home</a>
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark fw-bold" href="#header">Home</a>
                     </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark fw-bold" href = "#collection">Coleções</a>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark fw-bold" href="#collection">Coleções</a>
                     </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark fw-bold" href = "#special">Especial</a>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark fw-bold" href="#special">Especial</a>
                     </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark fw-bold" href = "#lançamento">Lançamentos</a>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark fw-bold" href="#lançamento">Lançamentos</a>
                     </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark fw-bold" href = "#Oferta">Ofertas</a>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark fw-bold" href="#Oferta">Ofertas</a>
                     </li>
-                    <li class = "nav-item px-2 py-2 border-0">
-                        <a class = "nav-link text-uppercase text-dark fw-bold" href = "#popular">Populares</a>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark fw-bold" href="#popular">Populares</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--fim da navbar-->
-    
+
     <!--header-->
-    <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 100px;">
-        <div class = "container h-100 d-lg-inline-flex align-items-center carousel-inner">
-            <div class = "text-lg-center carousel-item active">
-                <h2 class = "text-capitalize text-light fw-bold">A melhor coleção</h2>
-                <h1 class = "text-uppercase py-3 fw-bold text-white fw-bold"></h1>
-                <a href = "#" class = "btn mt-3 text-uppercase fw-bold">Compre Agora</a>
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 100px;">
+        <div class="container h-100 d-lg-inline-flex align-items-center carousel-inner">
+            <div class="text-lg-center carousel-item active">
+                <h2 class="text-capitalize text-light fw-bold">A melhor coleção</h2>
+                <h1 class="text-uppercase py-3 fw-bold text-white fw-bold"></h1>
+                <a href="#" class="btn mt-3 text-uppercase fw-bold">Compre Agora</a>
             </div>
-            <div class = "text-center carousel-item">
-                <h2 class = "text-capitalize text-white">Melhor preço e oferta</h2>
-                <h1 class = "text-uppercase py-2 fw-bold text-white"></h1>
-                <a href = "#" class = "btn mt-3 text-uppercase">Compre Agora</a>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Melhor preço e oferta</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white"></h1>
+                <a href="#" class="btn mt-3 text-uppercase">Compre Agora</a>
             </div>
         </div>
 
-        <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
-            <span class = "carousel-control-prev-icon"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
-            <span class = "carousel-control-next-icon"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
         </button>
     </header>
     <!--fim header-->
-    
-      <!--inico tabela gow-->
-        <section id = "collection" class = "py-5">
 
-            <div class = "container">
-                <div class = "title text-center">
-                    <h2 class = "position-relative d-inline-block">GOD OF WAR </h2>
+    <!--inico tabela gow-->
+    <section id="collection" class="py-5">
+
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">GOD OF WAR </h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
                 </div>
-            
-                <div class = "row g-0">
-                    <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">               
-                </div>           
 
-        </section>
-            
-         
+    </section>
 
-            <!--tabela gow-->
-                <div class = "collection-list mt-4 row gx-0 gy-3">
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-4 best">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagem/gowragnarok.webp" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center"></span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1 fw-bold">GOD OF RAGNAROK</p>
-                            <a href = "#" class = "btn btn-primary mt-3 disabled">Esgotado</a>
-                            <span class = "fw-bold"></span>
-                        </div>
-                    </div>
-                    
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-4 position-relative">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagem/gow44.webp" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center"></span>
-                        </div>
-                        
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1 fw-bold">GOD OF WAR 4</p>
-                            <a href = "#" class = "btn btn-primary mt-3 fw-bold">R$ 120,00</a>
-                            <span class = "fw-bold"></span>
-                        </div>
-                    </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-4 new">
-                        <div class = "collection-img position-relative">
-                            <img src = "Imagem/God_of_War_2_capa.png" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center"></span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1 fw-bold">GOD OF WAR ASCENSION</p>
-                            <a href = "#" class = "btn btn-primary mt-3 fw-bold">R$ 70,00</a>
-                            <span class = "fw-bold"></span>
-                        </div>
-                    </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-4 best">
-                        <div class = "collection-img position-relative">
-                            <img src = "/Imagem/gow1.jpg" class = "w-100">
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center"></span>
-                        </div>
-                        <div class = "text-center">
-                            <div class = "rating mt-3">
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
-                            </div>
-                            <p class = "text-capitalize my-1 fw-bold">GOD OF WAR 3</p> 
-                            <a href = "#" class = "btn btn-primary mt-3 fw-bold">R$ 45,50</a>  
-                            <span class = "fw-bold"></span>
-                        </div>
-                    </div>
-                <!--fim god-->    
-
-                <!--COLEÇÃO-->
-                    <section id = "collection" class = "py-5">
-                        <div class = "container">
-                            <div class = "title text-center">
-                                <h2 class = "">COLEÇÕES CONSOLE</h2>
-                            </div>
-
-                            
-                            <br>
-
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="card mb-4 shadow-sm">
-                                    <img class="card-img-top" src="/Imagem/ps3.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text fw-bold">PLAYSTATION 3</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary disabled">ESGOTADO</button>                                          
-                                        </div>
-                                        <small class="text-muted"></small>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="card mb-4 shadow-sm">
-                                    <img class="card-img-top" src="/Imagem/ps4-pro-product-thumbnail-01-en-14sep21.webp" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text"></p>
-                                      <p class="card-text fw-bold">PLAYSTATION 4 PRO</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary">COMPRAR</button>                                       
-                                        </div>
-                                        <small class="text-muted"></small>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                  <div class="card mb-4 shadow-sm">                                  
-                                    <img class="card-img-top" src="/Imagem/ps5-product-thumbnail-01-en-14sep21.webp" alt="Card image cap">
-                                    <div class="card-body">
-                                      <p class="card-text fw-bold">PLAYSTATION 5</p>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                          <button type="button" class="btn btn-sm btn-outline-secondary">COMPRAR</button>
-                                        </div>
-                                        <small class="text-muted"></small>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>                                                      
-                            </div>
-                        </div>
-                    </section>                                                                          
-             <!--fim coleção-->
-
-             <!--EDIÇÃO ESPECIAL-->
-             <section id = "special" class = "py-5 bg-dark">
-                <div class = "container">
-                    <div class = "title text-center py-5">
-                        <h2 class = "position-relative d-inline-block text-white fw-bold">Os Mais Vendidos <i class="fa-brands fa-playstation fw-light"></i></h2>
-                    </div>
+    <!--tabela gow-->
+    <div class="collection-list mt-4 row gx-0 gy-3">
+        <div class="col-md-6 col-lg-4 col-xl-3 p-4 best">
+            <div class="collection-img position-relative">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202109/2821/SZRc7OMwGgv8lJXIOlYyuBU2.jpg"
+                    class="w-100">
+                <span
+                    class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"></span>
+            </div>
+            <div class="text-center">
+                <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1 fw-bold">GOD OF RAGNAROK</p>
+                <a href="#" class="btn btn-primary mt-3 disabled">Esgotado</a>
+                <span class="fw-bold"></span>
+            </div>
+        </div>
         
-                    <div class = "special-list row g-0">
-                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                            <div class = "special-img position-relative overflow-hidden">
-                                <img src = "/Imagem/The_Last_of_Us_capa.png" class = "w-100">
-                                <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                                    <i class = "fas fa-heart"></i>
-                                </span>
-                            </div>
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1 text-white fw-bold">THE LAST OF US 2</p>
-                                <span class = "fw-bold d-block text-white"></span>
-                                <a href = "#" class = "btn btn-primary mt-3 fw-bold">R$ 70,00</a>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-4 position-relative">
+            <div class="collection-img position-relative">
+                <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2217/Z7hV9hpxaxrPeZJp5b3iThJp.png"
+                    class="w-100">
+                <span
+                    class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"></span>
+            </div>
+
+            <div class="text-center">
+                <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1 fw-bold">GOD OF WAR 4</p>
+                <a href="#" class="btn btn-primary mt-3 fw-bold">R$ 120,00</a>
+                <span class="fw-bold"></span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+            <div class="collection-img position-relative">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/7/7e/God_of_War_2_capa.png" class="w-100">
+                <span
+                    class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"></span>
+            </div>
+
+            <div class="text-center">
+                <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1 fw-bold">GOD OF WAR 2</p>
+                <a href="#" class="btn btn-primary mt-3 fw-bold">R$ 70,00</a>
+                <span class="fw-bold"></span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-4 best">
+            <div class="collection-img position-relative">
+                <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2917/lVPrvW9AyMplvmdXsJmcHoLz.png"
+                    class="w-100">
+                <span
+                    class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"></span>
+            </div>
+            <div class="text-center">
+                <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1 fw-bold">GOD OF WAR 3</p>
+                <a href="#" class="btn btn-primary mt-3 fw-bold">R$ 45,50</a>
+                <span class="fw-bold"></span>
+            </div>
+        </div>
+        <!--fim god-->
+
+        <!--COLEÇÃO-->
+        <section id="collection" class="py-5">
+            <div class="container">
+                <div class="title text-center">
+                    <h2 class="">COLEÇÕES CONSOLE</h2>
+                </div>
+
+
+                <br>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Sony-PlayStation-3-2001A-wController-L.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">PLAYSTATION 3</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button"
+                                            class="btn btn-sm btn-outline-secondary disabled">ESGOTADO</button>
+                                    </div>
+                                    <small class="text-muted"></small>
+                                </div>
                             </div>
                         </div>
-                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                            <div class = "special-img position-relative overflow-hidden">
-                                <img src = "/Imagem/The_Last_of_Us_2_capa.png" class = "w-100">
-                                <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                                    <i class = "fas fa-heart"></i>
-                                </span>
-                            </div>
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1 text-white">THE LAST OF US 2</p>
-                                <span class = "fw-bold d-block text-white"></span>
-                                <a href = "#" class = "btn btn-primary mt-3 fw-bold">R$ 120,00</a>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                src="/Pagina-ps-main/Loja virtual/Imagem/ps4-pro-product-thumbnail-01-en-14sep21.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                                <p class="card-text fw-bold">PLAYSTATION 4 PRO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">COMPRAR</button>
+                                    </div>
+                                    <small class="text-muted"></small>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                            <div class = "special-img position-relative overflow-hidden">
-                                <img src = "/Imagem/Ghost_of_Tsushima_capa.png" class = "w-100">
-                                <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                                    <i class = "fas fa-heart"></i>
-                                </span>
-                            </div>
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1 text-white">Ghost of Tsushima</p>
-                                <span class = "fw-bold d-block text-white"></span>
-                                <a href = "#" class = "btn btn-primary mt-3 fw-bold">R$ 140,00</a>
-                             
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                src="/Pagina-ps-main/Loja virtual/Imagem/ps5-product-thumbnail-01-en-14sep21.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">PLAYSTATION 5</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">COMPRAR</button>
+                                    </div>
+                                    <small class="text-muted"></small>
+                                </div>
                             </div>
                         </div>
-                        <!--FIM ESPECIAL-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--fim coleção-->
 
-                        <!--A MELHOR-->
-                        <header class = "vh-100 carousel slide" data-bs-ride = "carousel" id="lançamento">
-                            <img src="/Imagem/cod.jfif"
-                            <div class = "container h-100 d-lg-inline-flex align-items-center carousel-inner">
-                                <div class = "text-center carousel-item active">
-                                    <h2 class = "text-capitalize text-light ">A melhor coleção</h2>
-                                    <h1 class = "text-uppercase py-3 fw-bold text-white">É AQUI</h1>
-                                    <a href = "#" class = "btn mt-3 text-uppercase">Comprar</a>
-                                </div>
-                                <div class = "text-center carousel-item">
-                                    <h2 class = "text-capitalize text-white"></h2>
-                                    <h1 class = "text-uppercase py-2 fw-bold text-white">Nova Temporada</h1>
-                                    <a href = "#" class = "btn mt-3 text-uppercase">Comprar Agora</a>
-                                </div>
-                            </div>
-                    
-                            <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
-                                <span class = "carousel-control-prev-icon"></span>
-                            </button>
-                            <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
-                                <span class = "carousel-control-next-icon"></span>
-                            </button>
-                        </header>                 
-                         <section id = "collection" class = "py-5">
-                            <div class = "container">
-                                <div class = "title text-center">
-                                    <h2 class = "position-relative d-inline-block"></h2>
-                                </div>
-                                <!--MELHOR FIM-->
+        <!--EDIÇÃO ESPECIAL-->
+        <section id="special" class="py-5 bg-dark">
+            <div class="container">
+                <div class="title text-center py-5">
+                    <h2 class="position-relative d-inline-block text-white fw-bold">Os Mais Vendidos <i
+                            class="fa-brands fa-playstation fw-light"></i></h2>
+                </div>
 
-                                <!--OFERTAS FIM DE ANO-->
-                                <section id="Oferta" class = "py-5">
-                                    <div class = "container">
-                                        <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
-                                            <div class = "offers-content">
-                                                <span class = "text-white"></span>
-                                                <h2 class = "mt-2 mb-4 text-white">Grande oferta de fim de ano!</h2>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>                       
-                                <div class = "row g-3">
-                                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
-                                        <img src = "/Imagem/Spider-Man_Miles_Morales_capa.png" alt = "">
-                                        <div class = "card-body px-0">
-                                            <h4 class = "card-title"></h4>
-                                            <p class = "card-text mt-3 text-muted">Experimente a Edição Jogo do Ano de Marvel's Spider-Man, que inclui o jogo completo e o conteúdo integral do arco de histórias Marvel’s Spider-Man: A cidade que nunca dorme para download.
+                <div class="special-list row g-0">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="special-img position-relative overflow-hidden">
+                            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png" class="w-100">
+                            <span
+                                class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize mt-3 mb-1 text-white fw-bold">THE LAST OF US REMAKE</p>
+                            <span class="fw-bold d-block text-white"></span>
+                            <a href="#" class="btn btn-primary mt-3 fw-bold">R$ 70,00</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="special-img position-relative overflow-hidden">
+                            <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2618/w48z6bzefZPrRcJHc7L8SO66.png" class="w-100">
+                            <span
+                                class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize mt-3 mb-1 text-white">THE LAST OF US 2</p>
+                            <span class="fw-bold d-block text-white"></span>
+                            <a href="#" class="btn btn-primary mt-3 fw-bold">R$ 120,00</a>
+                        </div>
+                    </div>
 
-                                                “Um dos melhores jogos do PS4. Ponto.”
-                                                - Nerdist
-                                                
-                                                “Uma aventura espetacular.”
-                                                - IGN 
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="special-img position-relative overflow-hidden">
+                            <img src="/Pagina-ps-main/Loja virtual/Imagem/Ghost_of_Tsushima_capa.png" class="w-100">
+                            <span
+                                class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize mt-3 mb-1 text-white">Ghost of Tsushima</p>
+                            <span class="fw-bold d-block text-white"></span>
+                            <a href="#" class="btn btn-primary mt-3 fw-bold">R$ 140,00</a>
 
-                                                Esse não é o Spider-Man que você conhece ou já viu antes. É um Peter Parker experiente, que domina melhor a arte de combater os grandes criminosos na cidade de Nova York. Ao mesmo tempo, ele está tendo dificuldades para equilibrar sua vida pessoal caótica e sua carreira, tudo isso enquanto o destino da Nova York da Marvel está em suas mãos.</p>
-                                            <p class = "card-text">
-                                                <small class = "text-muted">
-                                                    <span class = "fw-bold"></span>
-                                                </small>
-                                            </p>
-                                            <a href = "#" class = "btn">Comprar</a>
-                                        </div>
-                                    </div>
-                    
-                                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
-                                        <img src = "/Imagem/Cyberpunk_2077_capa.png" alt = "">
-                                        <div class = "card-body px-0">
-                                            <h4 class = "card-title"></h4>
-                                            <p class = "card-text mt-3 text-muted">Cyberpunk 2077 é um mundo aberto de ação e aventura dos criadores de The Witcher 3: Wild Hunt, a CD Projekt Red.
-                                                O jogo acontece em Night City, uma megalópole obcecada pelo poder, glamour e modificações biológicas. Você controla V, um mercenário fora da lei em busca de um implante sem igual, que carrega o segredo da imortalidade.
-                                                Atualizado para a nova geração e com conteúdo adicional grátis, personalize seu personagem e estilo de jogo enquanto aceita serviços, constrói uma reputação e desbloqueia melhorias. 
-                                                Seus relacionamentos e decisões definem a história e o mundo à sua volta. As lendas nascem aqui. Qual será a sua?</p>
-                                            <p class = "card-text">
-                                                <small class = "text-muted">
-                                                    <span class = "fw-bold"></span>
-                                                </small>
-                                            </p>
-                                            <a href = "#" class = "btn">Comprar</a>
-                                        </div>
-                                    </div>
-                    
-                                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
-                                        <img src = "/Imagem/ff7-remake-capa.jpg" alt = "">
-                                        <div class = "card-body px-0">
-                                            <h4 class = "card-title"></h4>
-                                            <p class = "card-text mt-3 text-muted">FINAL FANTASY VII REMAKE INTERGRADE é uma versão expandida e otimizada do jogo aclamado e premiado FINAL FANTASY VII REMAKE para PlayStation 5. FINAL FANTASY VII REMAKE INTERGRADE vem com FF7R EPISODE INTERmission que conta com Yuffie como protagonista de uma história nova empolgante e várias melhorias de jogabilidade para agradar aos jogadores.</p>
-                                            <p class = "card-text">
-                                                <small class = "text-muted">
-                                                    <span class = "fw-bold"> </span>
-                                                </small>
-                                            </p>
-                                            <a href = "#" class = "btn">Comprar</a>
-                                        </div>
+                        </div>
+                    </div>
+                    <!--FIM ESPECIAL-->
+
+                    <!--A MELHOR-->
+                    <header class="vh-100 carousel slide" data-bs-ride="carousel" id="lançamento">                     
+                        <img class="" src="https://t2.tudocdn.net/633092?w=1000&h=900"
+                            class="container h-100 d-lg-inline-flex align-items-center carousel-inner">
+                        <div class="text-center carousel-item active">
+                            <h2 class="text-capitalize text-light ">A melhor coleção</h2>
+                            <h1 class="text-uppercase py-3 fw-bold text-white">É AQUI</h1>
+                            <a href="#" class="btn mt-3 text-uppercase">Comprar</a>
+                        </div>
+                        <div class="text-center carousel-item">
+                            <h2 class="text-capitalize text-white"></h2>
+                            <h1 class="text-uppercase py-2 fw-bold text-white">Nova Temporada</h1>
+                            <a href="#" class="btn mt-3 text-uppercase">Comprar Agora</a>
+                        </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                </header>
+                <section id="collection" class="py-5">
+                    <div class="container">
+                        <div class="title text-center">
+                            <h2 class="position-relative d-inline-block"></h2>
+                        </div>
+                        <!--MELHOR FIM-->
+
+                        <!--OFERTAS FIM DE ANO-->
+                        <section id="Oferta" class="py-5">
+                            <div class="container">
+                                <div
+                                    class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                                    <div class="offers-content">
+                                        <span class="text-white"></span>
+                                        <h2 class="mt-2 mb-4 text-white">Grande oferta de fim de ano!</h2>
+
                                     </div>
                                 </div>
                             </div>
                         </section>
-                    </div>
-                </div>
-            </section>
-            <!--FIM OFERTAS-->
+                        <div class="row g-3">
+                            <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                                <img src="/Pagina-ps-main/Loja virtual/Imagem/Spider-Man_Miles_Morales_capa.png" alt="">
+                                <div class="card-body px-0">
+                                    <h4 class="card-title"></h4>
+                                    <p class="card-text mt-3 text-muted">Experimente a Edição Jogo do Ano de Marvel's
+                                        Spider-Man, que inclui o jogo completo e o conteúdo integral do arco de
+                                        histórias Marvel’s Spider-Man: A cidade que nunca dorme para download.
 
-            <!--POPULARES-->
-            <section id = "popular" class = "py-5">
-                <div class = "container">
-                    <div class = "title text-center pt-3 pb-5">
-                        <h2 class = "position-relative d-inline-block ms-4 fw-semibold">POPULARES DESTE ANO</h2>
-                    </div>
-        
-                    <div class = "row">
-                        <div class = "col-md-6 col-lg-4 row g-3">
-                            <h3 class = "fs-5">Maiores avaliações</h3>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/horizon.jpg" alt = "" class = "img-fluid pe-3 w-25">
-                                <div>
-                                    <p class = "mb-0 fw-bold">Horizon Forbidden West</p>
-                                    <span class="fw-bold">R$ 150,00</span>
-                                </div>
-                            </div>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/16631-persona-5-royal-capa-1.jpg" alt = "" class = "img-fluid pe-3 w-25">
-                                <div>
-                                    <p class = "mb-0 fw-bold">Persona 5 Royal Edition</p>
-                                    <span class="fw-bold">R$ 280,00</span>
-                                </div>
-                            </div>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/The_Last_of_Us_capa.png" alt = "" class = "img-fluid pe-3 w-25" <>
-                                <div>
-                                    <p class = "mb-0 fw-bold">The Last Of Us Part 1</p>
-                                    <span class="fw-bold">R$ 70,00</span>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class = "col-md-6 col-lg-4 row g-3">
-                            <h3 class = "fs-5">Mais vendidos</h3>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/Gran_Turismo_7_capa.png" alt = "" class = "img-fluid pe-3 w-25">
-                                <div>
-                                    <p class = "mb-0">Gran Turismo 7</p>
-                                    <span class="fw-bold">R$ 238,00</span>
-                                </div>
-                            </div>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/FIFA-23-1.jpg" alt = "" class = "img-fluid pe-3 w-25">
-                                <div>
-                                    <p class = "mb-0 fw-bold">FIFA 23</p>
-                                    <span class="fw-bold">R$ 200,00</span>
-                                </div>
-                            </div>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/Elden_Ring_capa.jpg" alt = "" class = "img-fluid pe-3 w-25">
-                                <div>
-                                    <p class = "mb-0 fw-bold">ELDEN RING</p>
-                                    <span class="fw-bold">R$ 250,00</span>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class = "col-md-6 col-lg-4 row g-3">
-                            <h3 class = "fs-5">Melhores promoções</h3>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/Sifu_capa.jpg" alt = "" class = "img-fluid pe-3 w-25">
-                                <div>
-                                    <p class = "mb-0 fw-bold">SIFU</p>
-                                    <span class="fw-bold">R$ 70,00</span>
-                                </div>
-                            </div>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/star-wars.jpeg" alt = "" class = "img-fluid pe-3 w-25">
-                                <div>
-                                    <p class = "mb-0 fw-bold">Star Wars Jedi:Fallen Order</p>
-                                    <span class="fw-bold"> R$ 50,00</span>
-                                </div>
-                            </div>
-                            <div class = "d-flex align-items-start justify-content-start">
-                                <img src = "/Imagem/Stray_capa.png" alt = "" class = "img-fluid pe-3 w-25">
-                                <div>
-                                    <p class = "mb-0">Stray</p>
-                                    <span class="fw-bold">R$ 20,00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer class = "bg-dark py-5">
-                <div class = "container">
-                    <div class = "row text-white g-4">
-                        <div class = "col-md-6 col-lg-3">
-                            <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html"></a>
-                            <p class = "text-white text-muted mt-3"></p>
-                        </div>
-                        <!--FIM POPULARES-->
+                                        “Um dos melhores jogos do PS4. Ponto.”
+                                        - Nerdist
 
-                        <!--FOOTER-->
-        
-                        <div class = "col-md-6 col-lg-3">
-                            <h5 class = "fw-light">Links</h5>
-                            <ul class = "list-unstyled">
-                                <li class = "my-3">
-                                    <a href = "#" class = "text-white text-decoration-none text-muted">
-                                        <i class = "fas fa-chevron-right me-1"></i> HOME
-                                    </a>
-                                </li>
-                                <li class = "my-3">
-                                    <a href = "#" class = "text-white text-decoration-none text-muted">
-                                        <i class = "fas fa-chevron-right me-1"></i> OFERTAS
-                                    </a>
-                                </li>
-                                <li class = "my-3">
-                                    <a href = "#" class = "text-white text-decoration-none text-muted">
-                                        <i class = "fas fa-chevron-right me-1"></i> LANÇAMENTOS
-                                    </a>
-                                </li>
-                                <li class = "my-3">
-                                    <a href = "#" class = "text-white text-decoration-none text-muted">
-                                        <i class = "fas fa-chevron-right me-1"></i> COLEÇÕES
-                                    </a>
-                                </li>
-                            </ul>
+                                        “Uma aventura espetacular.”
+                                        - IGN
+
+                                        Esse não é o Spider-Man que você conhece ou já viu antes. É um Peter Parker
+                                        experiente, que domina melhor a arte de combater os grandes criminosos na cidade
+                                        de Nova York. Ao mesmo tempo, ele está tendo dificuldades para equilibrar sua
+                                        vida pessoal caótica e sua carreira, tudo isso enquanto o destino da Nova York
+                                        da Marvel está em suas mãos.</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <span class="fw-bold"></span>
+                                        </small>
+                                    </p>
+                                    <a href="#" class="btn">Comprar</a>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                                <img src="/Pagina-ps-main/Loja virtual/Imagem/Cyberpunk_2077_capa.png" alt="">
+                                <div class="card-body px-0">
+                                    <h4 class="card-title"></h4>
+                                    <p class="card-text mt-3 text-muted">Cyberpunk 2077 é um mundo aberto de ação e
+                                        aventura dos criadores de The Witcher 3: Wild Hunt, a CD Projekt Red.
+                                        O jogo acontece em Night City, uma megalópole obcecada pelo poder, glamour e
+                                        modificações biológicas. Você controla V, um mercenário fora da lei em busca de
+                                        um implante sem igual, que carrega o segredo da imortalidade.
+                                        Atualizado para a nova geração e com conteúdo adicional grátis, personalize seu
+                                        personagem e estilo de jogo enquanto aceita serviços, constrói uma reputação e
+                                        desbloqueia melhorias.
+                                        Seus relacionamentos e decisões definem a história e o mundo à sua volta. As
+                                        lendas nascem aqui. Qual será a sua?</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <span class="fw-bold"></span>
+                                        </small>
+                                    </p>
+                                    <a href="#" class="btn">Comprar</a>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                                <img src="/Pagina-ps-main/Loja virtual/Imagem/ff7-remake-capa.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <h4 class="card-title"></h4>
+                                    <p class="card-text mt-3 text-muted">FINAL FANTASY VII REMAKE INTERGRADE é uma
+                                        versão expandida e otimizada do jogo aclamado e premiado FINAL FANTASY VII
+                                        REMAKE para PlayStation 5. FINAL FANTASY VII REMAKE INTERGRADE vem com FF7R
+                                        EPISODE INTERmission que conta com Yuffie como protagonista de uma história nova
+                                        empolgante e várias melhorias de jogabilidade para agradar aos jogadores.</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <span class="fw-bold"> </span>
+                                        </small>
+                                    </p>
+                                    <a href="#" class="btn">Comprar</a>
+                                </div>
+                            </div>
                         </div>
-        
-                        <div class = "col-md-6 col-lg-3">
-                            <h5 class = "fw-light mb-3">Contato</h5>
-                            <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
-                                <span class = "me-3">
-                                    <i class = "fas fa-map-marked-alt"></i>
-                                </span>
-                                <span class = "fw-light">
-                                    Guarulhos
-                                </span>
-                            </div>
-                            <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
-                                <span class = "me-3">
-                                    <i class = "fas fa-envelope"></i>
-                                </span>
-                                <span class = "fw-light">
-                                    Gustavo.sampaio195@gmail.com
-                                </span>
-                            </div>
-                            <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
-                                <span class = "me-3">
-                                    <i class = "fas fa-phone-alt"></i>
-                                </span>
-                                <span class = "fw-light">
-                                    11-967415480
-                                </span>
-                            </div>
+                    </div>
+                </section>
+            </div>
+    </div>
+    </section>
+    <!--FIM OFERTAS-->
+
+    <!--POPULARES-->
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4 fw-semibold">POPULARES DESTE ANO</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Maiores avaliações</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/horizon.jpg" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0 fw-bold">Horizon Forbidden West</p>
+                            <span class="fw-bold">R$ 150,00</span>
                         </div>
-        
-                        <div class = "col-md-6 col-lg-3">
-                            <h5 class = "fw-light mb-3">Redes sociais</h5>
-                            <div>
-                                <ul class = "list-unstyled d-flex">
-                                    <li>
-                                        <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
-                                            <i class = "fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
-                                            <i class = "fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
-                                            <i class = "fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
-                                            <i class = "fab fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/16631-persona-5-royal-capa-1.jpg" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0 fw-bold">Persona 5 Royal Edition</p>
+                            <span class="fw-bold">R$ 280,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/The_Last_of_Us_capa.png" alt="" class="img-fluid pe-3 w-25" <>
+                        <div>
+                            <p class="mb-0 fw-bold">The Last Of Us Part 1</p>
+                            <span class="fw-bold">R$ 70,00</span>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!--FIM FOOTER-->
 
-            
-            
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Mais vendidos</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/Gran_Turismo_7_capa.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Gran Turismo 7</p>
+                            <span class="fw-bold">R$ 238,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/FIFA-23-1.jpg"alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0 fw-bold">FIFA 23</p>
+                            <span class="fw-bold">R$ 200,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/Elden_Ring_capa.jpg" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0 fw-bold">ELDEN RING</p>
+                            <span class="fw-bold">R$ 250,00</span>
+                        </div>
+                    </div>
+                </div>
 
-                                                    
-                                                     
-            
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Melhores promoções</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/Sifu_capa.jpg" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0 fw-bold">SIFU</p>
+                            <span class="fw-bold">R$ 70,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/star-wars.jpeg" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0 fw-bold">Star Wars Jedi:Fallen Order</p>
+                            <span class="fw-bold"> R$ 50,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="/Pagina-ps-main/Loja virtual/Imagem/Stray_capa.png" alt="" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Stray</p>
+                            <span class="fw-bold">R$ 20,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html"></a>
+                    <p class="text-white text-muted mt-3"></p>
+                </div>
+                <!--FIM POPULARES-->
 
-    
+                <!--FOOTER-->
 
-<!--Jquerry-->
-<script src="jquery-3.6.1.js"></script>    
-<!--SCRIPTS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<!--CS javascript-->
-<script src="scripts.js"></script>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> HOME
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> OFERTAS
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> LANÇAMENTOS
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> COLEÇÕES
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contato</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Guarulhos
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            Gustavo.sampaio195@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            11-967415480
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Redes sociais</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FIM FOOTER-->
+
+
+    <!--Jquerry-->
+    <script src="jquery-3.6.1.js"></script>
+    <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!--CS javascript-->
+    <script src="scripts.js"></script>
 </body>
+
 </html>
