@@ -8,6 +8,8 @@ body {
 
 /*nav*/
 
+
+
 .navbar {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
 }
@@ -38,7 +40,7 @@ body {
 
 /*HEADER*/
 #header{
-    background: url(/Imagem/GOD.jpg) 
+    background: url(https://images.alphacoders.com/117/thumb-1920-1173124.jpg) 
     no-repeat;
     
     
@@ -51,3 +53,13 @@ body {
         border-bottom: none;
     }
 }
+
+div:hover:not(:hover){
+    opacity: 0.3;
+}
+
+img:hover{
+    scale: 1.1;
+    transition: 400ms;
+}
+
